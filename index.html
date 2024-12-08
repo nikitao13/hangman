@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="script.js"></script>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Hangman *_*</title>
   </head>
   <body>
     <main>
-      <section id="imgContainer"><img src="./imgs/h-0.jpg" /></section>
+      <h1>Hangman!</h1>
+      <section class="img-container"><img class="img-container__img" src="./imgs/h-10.jpg" /></section>
 
-      <section id="guessContainer">
-        <h1 id="guessesDisplayed"></h1>
+      <section class="guesses">
+        <h1 class="guesses__display"></h1>
       </section>
 
       <section id="kb"></section>

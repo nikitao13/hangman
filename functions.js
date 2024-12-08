@@ -21,7 +21,7 @@ export const isWordGuessed = (guessArr, randomWord) => {
 const allGuessesUsed = (arr) => arr.length >= 10;
 
 export const resetWord = (el, arr, wordLength) => {
-  el.innerText = "_".repeat(wordLength);
+  el.innerText = "_ ".repeat(wordLength);
   arr.length = 0;
 };
 
@@ -39,10 +39,19 @@ export const updateGuess = (el, key, arr, randomWord) => {
 
 // RENDERING LOGIC FOR KEYBOARD
 const newKey = (el, keyValue) => {
+  let rowContainer = el.querySelector(".kb__row:last-child");
+
+  if (keyValue === "Q" || keyValue === "A" || keyValue === "Z") {
+    rowContainer = document.createElement("div");
+    rowContainer.className = "kb__row";
+    el.append(rowContainer);
+  }
+
   const newDiv = document.createElement("div");
   newDiv.className = "kb__k";
   newDiv.innerHTML = `<span>${keyValue}</span>`;
-  el.append(newDiv);
+
+  rowContainer.append(newDiv);
 };
 
 export const renderKeyboard = (el, arr) => {

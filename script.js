@@ -12,7 +12,7 @@ let randomWord = "";
 let guessArr = [];
 
 const keyboardContainer = document.getElementById("kb");
-const guessesDisplayed = document.getElementById("guessesDisplayed");
+const guessesDisplayed = document.querySelector(".guesses__display");
 
 renderKeyboard(keyboardContainer, alphabet);
 

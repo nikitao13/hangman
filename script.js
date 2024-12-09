@@ -88,6 +88,8 @@ const initialiseGame = () => {
   resetWord(guessesDisplayed, guessArr, randomWord.length);
 
   renderKeyboard(keyboardContainer, alphabet, handleKeyPress);
+
+  console.log(randomWord);
 };
 
 initialiseGame();

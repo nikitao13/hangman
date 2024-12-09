@@ -49,7 +49,7 @@ const gameLost = () => {
   setTimeout(() => {
     alert(`You lost! The word was: ${randomWord}`);
     initialiseGame();
-  }, 100);
+  }, 500);
 };
 
 const updateGuess = (el, key, arr, randomWord) => {
@@ -73,7 +73,7 @@ const updateGuess = (el, key, arr, randomWord) => {
   if (!currentState.includes("_")) {
     setTimeout(() => {
       gameWon();
-    }, 100);
+    }, 500);
   }
 };
 

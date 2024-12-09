@@ -5,6 +5,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  user-select: none;
 }
 
 main {
@@ -33,7 +34,6 @@ main {
   width: 1.5em;
   height: 1.5em;
   font-size: 28px;
-  user-select: none;
 
   &:hover {
     cursor: pointer;
@@ -72,4 +72,11 @@ main {
 
   &__img {
   }
+}
+
+.kb__k.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  color: red;
+  border: 2px solid red;
 }

@@ -5,6 +5,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  user-select: none;
 }
 
 main {
@@ -33,7 +34,6 @@ main {
   width: 1.5em;
   height: 1.5em;
   font-size: 28px;
-  user-select: none;
 }
 .kb__k:hover {
   cursor: pointer;
@@ -68,6 +68,12 @@ main {
   justify-content: center;
   align-items: center;
   scale: 0.85;
+}
+.kb__k.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  color: red;
+  border: 2px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */
